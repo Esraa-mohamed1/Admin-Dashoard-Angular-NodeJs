@@ -2,19 +2,13 @@
 
 ![image](https://github.com/user-attachments/assets/8944d135-b8ca-4e1d-bbc3-effe804338c9)
 
-## Prerequisites
 
-**Node version 20.x.x**
-<br />
-**Angular CLI 18.x.x**
+
 
 ## Setting up the project
 
 ### Cloning the repository
 
-```shell
-git clone https://github.com/psuarezdev/angular-ecommerce.git
-```
 
 ### Install packages
 
