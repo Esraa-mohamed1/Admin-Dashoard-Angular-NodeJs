@@ -22,7 +22,8 @@ export class CustomersComponent implements OnInit {
   fetchCustomers() {
     this.costumersService.getCostumer().subscribe(
       (res: any) => {
-        this.result = res.customers;
+        // Convert the object response to an array
+        this.result = Object.values(res);
       },
       (err) => {
         console.error('Error fetching customers:', err);

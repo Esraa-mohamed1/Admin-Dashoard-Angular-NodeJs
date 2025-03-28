@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit {
     this.loginForm = this.fb.group({
       name: ['nada', Validators.required],
       email: ['nada@example.com', [Validators.required, Validators.email]],
-      password: ['admin', Validators.required],
+      password: ['admin123', Validators.required],
       role: ['admin']
     });
   }

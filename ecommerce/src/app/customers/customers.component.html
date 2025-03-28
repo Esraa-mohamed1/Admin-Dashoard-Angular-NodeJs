@@ -19,30 +19,18 @@
                         
                     <tr>
                         <th class="text-md capitalize whitespace-nowrap bg-[#000] text-white py-4 px-2 text-center">#ID</th>
-                        <th class="text-md capitalize whitespace-nowrap bg-[#000] text-white py-4 px-2 text-center">Profile Image</th>
-                        <th class="text-md capitalize whitespace-nowrap bg-[#000] text-white py-4 px-2 text-center">First Name</th>
-                        <th class="text-md capitalize whitespace-nowrap bg-[#000] text-white py-4 px-2 text-center">Last Name</th>
+                        <th class="text-md capitalize whitespace-nowrap bg-[#000] text-white py-4 px-2 text-center">Name</th>
                         <th class="text-md capitalize whitespace-nowrap bg-[#000] text-white py-4 px-2 text-center">Email</th>
-                        <th class="text-md capitalize whitespace-nowrap bg-[#000] text-white py-4 px-2 text-center">Phone Number</th>
-                        <th class="text-md capitalize whitespace-nowrap bg-[#000] text-white py-4 px-2 text-center">register Date</th>
-                        
+                        <th class="text-md capitalize whitespace-nowrap bg-[#000] text-white py-4 px-2 text-center">Role</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <ng-container *ngFor="let costumer of result; let i = index">
-                        <tr (click)="navigateTo(costumer._id)">
-                            <td (click)="navigateTo(costumer._id)" class=" underline  text-center  text-black font-normal text-lg py-4 border-b border-black border-t">{{ i + 1 }}</td>
-                            
-                            <td (click)="navigateTo(costumer._id)" class=" underline  text-center    text-black font-normal text-lg py-4 border-b border-black border-t">
-                                <div class="flex items-center gap-2">
-                                    <img class="rounded-full  h-[45px] w-[45px]" [src]="costumer.profileImage" alt="image">
-                                </div>
-                            </td>
-                            <td (click)="navigateTo(costumer._id)" class="  text-center  text-black font-normal text-lg py-4 border-b border-black border-t">{{costumer.firstName }}</td>
-                            <td (click)="navigateTo(costumer._id)" class="  text-center  text-black font-normal text-lg py-4 border-b border-black border-t">{{costumer.lastName}}</td>
-                            <td (click)="navigateTo(costumer._id)" class="  text-center  text-black font-normal text-lg py-4 border-b border-black border-t">{{costumer.email }}</td>
-                            <td (click)="navigateTo(costumer._id)" class="  text-center  text-black font-normal text-lg py-4 border-b border-black border-t">{{costumer.phoneNumber }}</td>
-                            <td (click)="navigateTo(costumer._id)" class="  text-center  text-black font-normal text-lg py-4 border-b border-black border-t">{{formatReadableDate(costumer.registrationDate) }}</td>
+                    <ng-container *ngFor="let user of result; let i = index">
+                        <tr (click)="navigateTo(user._id)">
+                            <td (click)="navigateTo(user._id)" class="underline text-center text-black font-normal text-lg py-4 border-b border-black border-t">{{ i + 1 }}</td>
+                            <td (click)="navigateTo(user._id)" class="text-center text-black font-normal text-lg py-4 border-b border-black border-t">{{user.name}}</td>
+                            <td (click)="navigateTo(user._id)" class="text-center text-black font-normal text-lg py-4 border-b border-black border-t">{{user.email}}</td>
+                            <td (click)="navigateTo(user._id)" class="text-center text-black font-normal text-lg py-4 border-b border-black border-t">{{user.role}}</td>
                         </tr>
                     </ng-container>    
                 </table>
