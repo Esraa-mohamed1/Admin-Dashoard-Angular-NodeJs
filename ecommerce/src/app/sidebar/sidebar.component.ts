@@ -13,9 +13,6 @@ export class SidebarComponent {
       title: 'Dashboard',
       items: [
         {
-          name: 'overview',
-          icon: 'fa-solid fa-house',
-        }, {
           name: 'billboards',
           icon: 'fa-brands fa-bandcamp',
         }

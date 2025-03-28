@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class TagsService {
 
-  private baseUrl = 'http://localhost:3000/api/v1/tags';
+  private baseUrl = 'http://localhost:3030/api/admin/promos';
 
   constructor(private http: HttpClient) { }
 
