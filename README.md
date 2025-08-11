@@ -1,4 +1,4 @@
-### PickMe Dashboard
+### Ego Admin Dashboard
 
 This is the administrative dashboard for Ego wesite, your ultimate e-commerce store. It is built using  Tailwind CSS, Angular, MongoDB, Node.js, Express.js, and JWT for secure authentication.
 
