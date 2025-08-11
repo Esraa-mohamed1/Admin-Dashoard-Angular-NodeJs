@@ -1,58 +1,75 @@
-# Fullstack E-Commerce: Angular, Express.js, MongoDB, Mongoose, Stripe and TailwindCSS
+### Ego Admin Dashboard
 
-![image](https://github.com/user-attachments/assets/8944d135-b8ca-4e1d-bbc3-effe804338c9)
+This is the administrative dashboard for Ego wesite, your ultimate e-commerce store. It is built using  Tailwind CSS, Angular, MongoDB, Node.js, Express.js, and JWT for secure authentication.
 
+## Technologies Used
 
+- **Frontend:**
+  - AngularJS
+  - Tailwind CSS
+ 
 
+- **Backend:**
+  - MongoDB
+  - Node.js
+  - Express.js
 
-## Setting up the project
+- **Authentication:**
+  - JWT (JSON Web Tokens)
 
-### Cloning the repository
+## Application Overview
 
-
-### Install packages
-
-```shell
-cd ecommerce
-npm i -E
-cd ../ecommerce-api
-npm i -E
-```
-
-### Setup .env files
-
-#### Angular
-
-```shell
-ng generate environments
-```
-
-```js
-// environment.development.ts
-export const environment = {
-  production: false,
-  apiUrl: 'http://localhost:<your-api-port>/api'
-};
-
-```
-
-#### Express.js
+The Ego admin Dashboard provides a comprehensive set of tools to manage various aspects of the e-commerce store.
 
 
-```js
-PORT=
-CLIENT_URL=
-JWT_SECRET=
-STRIPE_SECRET=
-// This is the checkout webhook secret
-STRIPE_WEBHOOK_SECRET=
-```
+### Customer Management
 
-### Start the app
+- Add, edit, and view customer information.
+- Track customer interactions and order history.
 
-```shell
-cd ecommerce-api
-npm run dev
-cd ../ecommerce
-npm start
-```
+
+### Promo codes Management
+
+- Create, update, and delete product Promo codes.
+- Associate Promo codes with products .
+
+
+
+### Category Management
+
+- Manage product categories and subcategories.
+- Ensure a well-organized product catalog.
+
+
+### Billboard Management
+
+- Control promotional billboards and banners.
+- Dynamically update and schedule promotions.
+
+
+### Product Management
+
+- Add new products to the catalog.
+- Update product details, including images and descriptions.
+
+### Income Tracking
+
+- Monitor and analyze income and revenue data.
+- View reports and insights on financial performance.
+
+### Order Management
+
+- Handle customer orders efficiently.
+- Track order status and manage order fulfillment.
+
+
+
+## Installation
+
+1. Clone or download the repository to your local machine.
+2. Ensure you have Node.js and npm installed.
+3. Open a terminal or command prompt and navigate to the project directory.
+4. Run the following command to install the required dependencies:
+
+   ```bash
+   npm install
