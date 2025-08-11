@@ -64,12 +64,37 @@ The Ego admin Dashboard provides a comprehensive set of tools to manage various 
 
 
 
-## Installation
 
-1. Clone or download the repository to your local machine.
-2. Ensure you have Node.js and npm installed.
-3. Open a terminal or command prompt and navigate to the project directory.
-4. Run the following command to install the required dependencies:
+## ⚙️ Installation
+
+1. Clone or download this repository:
 
    ```bash
+   git clone https://github.com/your-username/ego-admin-dashboard.git
+   ```
+2. Install dependencies for the backend:
+
+   ```bash
+   cd backend
    npm install
+   ```
+3. Install dependencies for the frontend (Angular):
+
+   ```bash
+   cd frontend
+   npm install
+   ```
+5. Run backend server:
+
+   ```bash
+   cd backend
+   npm run dev
+   ```
+6. Run frontend app:
+ ```bash
+cd frontend
+ng serve
+```
+
+---
+
